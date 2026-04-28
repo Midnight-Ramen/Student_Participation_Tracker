@@ -3,110 +3,434 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Forest Ridge Innovation Lab | Student Tracker</title>
-    <link rel="stylesheet" href="styles.css?v=20260428-1">
+    <title>Jonathan Delgado | EdTech + Immersive Learning</title>
+    <meta
+      name="description"
+      content="Portfolio for Jonathan David Delgado, strategic innovation leader in EdTech, immersive learning, AI, makerspaces, VR, and game-based learning."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.88/build/spline-viewer.js"></script>
   </head>
   <body>
-    <main class="app-shell">
-      <header class="app-header">
-        <div class="title-lockup">
-          <img src="assets/forest-ridge-logo.png" alt="Forest Ridge School of the Sacred Heart logo">
-          <div class="title-copy">
-            <p>Forest Ridge Innovation Lab</p>
-            <h1>Student Tracker</h1>
-          </div>
-          <div class="session-summary" aria-label="Participation summary">
-            <span><strong id="totalStudents">0</strong> students</span>
-            <span><strong id="totalTurns">0</strong> turns</span>
-            <span><strong id="totalConnections">0</strong> links</span>
-          </div>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Jonathan Delgado home">
+        <span class="logo-mark" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </span>
+        <span>Jonathan Delgado</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#work">My Work</a>
+        <a href="#experience">Experience</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero section">
+        <div class="dot-field dot-left" aria-hidden="true"></div>
+        <div class="dot-field dot-right" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="kicker">Innovation Leadership · Emerging Technology · Learning Ecosystems</p>
+          <h1>Jonathan Delgado</h1>
+          <h2>Strategic Innovation Leader in EdTech + Immersive Learning</h2>
         </div>
-      </header>
 
-      <section class="workspace" aria-label="Seminar participation tracker">
-        <aside class="control-panel">
-          <section class="panel-section">
-            <h2>Roster</h2>
-            <label class="field-label" for="studentName">Student name</label>
-            <div class="inline-form">
-              <input id="studentName" type="text" autocomplete="off" placeholder="Add a student">
-              <button id="addStudent" type="button">Add</button>
-            </div>
-            <textarea id="bulkNames" rows="4" placeholder="Paste names, one per line"></textarea>
-            <button id="addBulk" class="secondary-button" type="button">Add Names</button>
-            <div id="rosterList" class="roster-list" aria-label="Current student roster"></div>
-          </section>
+        <div class="hero-art spline-art" aria-label="Interactive 3D portfolio scene">
+          <spline-viewer url="https://prod.spline.design/B6jCtQzCJURLRvud/scene.splinecode"></spline-viewer>
+        </div>
+      </section>
 
-          <section class="panel-section">
-            <h2>Seating</h2>
-            <div class="layout-grid" role="group" aria-label="Seating arrangement models">
-              <button class="layout-button active" data-layout="circle" type="button">Circle</button>
-              <button class="layout-button" data-layout="seminar" type="button">Seminar U</button>
-              <button class="layout-button" data-layout="rows" type="button">Rows</button>
-              <button class="layout-button" data-layout="pods" type="button">Pods</button>
-              <button class="layout-button" data-layout="free" type="button">Free</button>
-            </div>
-          </section>
+      <section class="audience section" aria-labelledby="focus-title">
+        <h2 id="focus-title">Innovation Focus</h2>
+        <div class="focus-grid">
+          <article class="focus-card lavender">
+            <div class="icon-stack" aria-hidden="true"></div>
+            <h3>Innovation Strategy & Learning Ecosystems</h3>
+            <p>
+              Leads the design and implementation of scalable innovation
+              ecosystems, integrating curriculum pathways, maker-centered
+              learning, and emerging technologies to drive institutional
+              transformation and measurable student impact.
+            </p>
+          </article>
+          <article class="focus-card lime">
+            <div class="icon-person" aria-hidden="true"></div>
+            <h3>Organizational Capacity & Instructional Innovation</h3>
+            <p>
+              Builds organizational capacity through strategic professional
+              learning, coaching, and systems design, empowering educators to
+              implement high-impact, technology-rich instruction aligned with
+              institutional goals.
+            </p>
+          </article>
+          <article class="focus-card lavender">
+            <div class="icon-screen" aria-hidden="true"></div>
+            <h3>Emerging Technology & Experiential Innovation</h3>
+            <p>
+              Leads the strategic adoption of AI, XR, and interactive
+              technologies to create scalable, future-focused learning models and
+              innovation pipelines aligned with academic and operational
+              priorities.
+            </p>
+          </article>
+        </div>
+      </section>
 
-          <section class="panel-section">
-            <h2>Directed Turn</h2>
-            <label class="field-label" for="fromStudent">Speaker</label>
-            <select id="fromStudent"></select>
-            <label class="field-label" for="toStudent">Directed to</label>
-            <select id="toStudent"></select>
-            <button id="addConnection" type="button">Add Conversation Line</button>
-          </section>
+      <section id="work" class="work section">
+        <div class="section-heading">
+          <span>Projects</span>
+          <h2>My Work</h2>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <p class="project-type">News Interview | Forest Ridge School of the Sacred Heart</p>
+            <h3>Bridging the STEM Gap for Girls Through Innovation</h3>
+            <p>
+              In this televised interview, I share how Forest Ridge is
+              reimagining STEM education for girls through the innovative
+              technology curriculum I developed, blending hands-on learning,
+              emerging technologies, and purposeful design. The program empowers
+              students to grow as creators, problem-solvers, and future leaders
+              in technology-driven fields. Our approach integrates immersive
+              experiences, AI tools, and maker-centered learning that reflect
+              best practices in girls’ education and digital fluency.
+            </p>
+            <button
+              class="watch-button"
+              type="button"
+              data-video-open
+              data-video-title="Bridging the STEM Gap for Girls Through Innovation"
+              data-video-src="https://drive.google.com/file/d/1buzYYyHmZRCvlFJJYN9xmWB0bUyaeogh/preview"
+            >
+              Watch video <span aria-hidden="true">-></span>
+            </button>
+          </article>
 
-          <section class="panel-section">
-            <h2>Session</h2>
-            <div class="legend">
-              <span><i class="red"></i> 0 turns</span>
-              <span><i class="yellow"></i> A few turns</span>
-              <span><i class="green"></i> Most turns</span>
-            </div>
-            <div class="session-actions">
-              <button id="undo" class="secondary-button" type="button">Undo</button>
-              <button id="reset" class="danger-button" type="button">Reset</button>
-            </div>
-            <button id="downloadReport" class="download-button" type="button">Download Report</button>
-          </section>
-        </aside>
+          <article class="project-card">
+            <p class="project-type">Program Overview | Forest Ridge School of the Sacred Heart</p>
+            <h3>Designing a Future-Ready Technology & Innovation Program</h3>
+            <p>
+              This promotional video highlights the technology and innovation
+              program I developed at Forest Ridge, showcasing our innovation
+              lab, curriculum pathways, and student-centered learning
+              experiences. The program integrates AI, machine learning,
+              robotics, and immersive technologies to foster creativity,
+              collaboration, and real-world problem-solving.
+            </p>
+            <button
+              class="watch-button"
+              type="button"
+              data-video-open
+              data-video-title="Designing a Future-Ready Technology & Innovation Program"
+              data-video-src="https://drive.google.com/file/d/1jr-PPyf2vAqZlb7dtWCdkf760DbALhm9/preview"
+            >
+              Watch video <span aria-hidden="true">-></span>
+            </button>
+          </article>
 
-        <section class="tracker-stage">
-          <div class="stage-toolbar">
+          <article class="project-card">
+            <p class="project-type">Professional Development Webinar | Nord Anglia University</p>
+            <h3>Gamification as a Pedagogical Strategy</h3>
+            <p>
+              In this professional development webinar created for Nord Anglia
+              University, I explore how gamification can be leveraged as a
+              powerful instructional strategy to increase engagement, motivation,
+              and deeper learning. The session highlights practical frameworks,
+              classroom-ready examples, and design principles educators can
+              apply across disciplines, demonstrating my work in translating
+              innovative pedagogy into scalable, high-quality professional
+              learning for educators.
+            </p>
+            <button
+              class="watch-button"
+              type="button"
+              data-video-open
+              data-video-title="Gamification as a Pedagogical Strategy"
+              data-video-src="https://www.youtube.com/embed/zkDdC1S82Uw?start=7"
+            >
+              Watch video <span aria-hidden="true">-></span>
+            </button>
+          </article>
+
+          <article class="project-card">
+            <p class="project-type">VR & Game Development Showcase | Educational Applications</p>
+            <h3>Immersive Learning Through VR & Game-Based Design</h3>
+            <p>
+              In this video showcase, I present a collection of virtual reality
+              and game development projects designed specifically for
+              educational use. These projects demonstrate how custom-built VR
+              experiences and games can support coursework, enhance engagement,
+              and deepen conceptual understanding across disciplines. I
+              specialize in designing bespoke VR educational games and immersive
+              learning experiences tailored to the needs of schools, programs,
+              and curricular goals.
+            </p>
+            <button
+              class="watch-button"
+              type="button"
+              data-video-open
+              data-video-title="Immersive Learning Through VR & Game-Based Design"
+              data-video-src="https://www.youtube.com/embed/I9hB0NYRR28"
+            >
+              Watch video <span aria-hidden="true">-></span>
+            </button>
+          </article>
+
+          <article class="project-card">
+            <p class="project-type">3D Web Game | Library of Congress Challenge</p>
+            <h3>Game-Based Civic Learning: The Bill of Rights Experience</h3>
+            <p>
+              In this project, I present a 3D web-based educational game
+              designed for the Library of Congress as part of a national
+              challenge. The game promotes civic understanding by engaging
+              learners with the Bill of Rights through interactive exploration
+              and gameplay. This work demonstrates how game-based design and web
+              technologies can make complex civic concepts more accessible,
+              engaging, and meaningful for learners in educational settings.
+            </p>
+            <button
+              class="watch-button"
+              type="button"
+              data-video-open
+              data-video-title="Game-Based Civic Learning: The Bill of Rights Experience"
+              data-video-src="https://www.youtube.com/embed/iss9PxhvCaE"
+            >
+              Watch video <span aria-hidden="true">-></span>
+            </button>
+          </article>
+
+          <article class="project-card">
+            <p class="project-type">Micro-PD Video Series | American Institute of Monterrey</p>
+            <h3>Design Thinking in the Classroom</h3>
+            <p>
+              This video is part of a short, five-minute professional learning
+              series I created for teachers at the American Institute of
+              Monterrey. The series focuses on practical, research-informed
+              teaching strategies designed for immediate classroom application.
+              This episode introduces design thinking as an instructional
+              approach, highlighting how educators can foster creativity,
+              problem-solving, and student-centered learning through structured,
+              accessible methods.
+            </p>
+            <button
+              class="watch-button"
+              type="button"
+              data-video-open
+              data-video-title="Design Thinking in the Classroom"
+              data-video-src="https://www.youtube.com/embed/oXoEcm-n_eM?start=1"
+            >
+              Watch video <span aria-hidden="true">-></span>
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="experience section">
+        <div class="section-heading">
+          <span>Experience</span>
+          <h2>Professional Timeline</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <span class="number">1</span>
             <div>
-              <h2 id="layoutTitle">Circle Discussion</h2>
-              <p id="chartHint">Click a student to add a spoken turn.</p>
+              <p class="org">Forest Ridge School of the Sacred Heart</p>
+              <h3>Innovation Specialist</h3>
+              <p>
+                At Forest Ridge School of the Sacred Heart, I lead the design of
+                the school’s innovation ecosystem, including the creation of an
+                Innovation Lab and a six-course technology and innovation pathway
+                for grades 5–12. I develop curriculum in AI, machine learning,
+                robotics, and immersive technologies, while supporting faculty in
+                meaningful technology integration across disciplines. I partner
+                with academic leadership to ensure innovation initiatives are
+                cohesive, scalable, and aligned with the school’s mission and
+                long-term academic vision.
+              </p>
             </div>
-            <div class="chart-actions">
-              <button id="lineMode" class="secondary-button" type="button">Line Mode</button>
-              <button id="clearLines" class="secondary-button" type="button">Clear Lines</button>
-            </div>
-          </div>
+          </article>
 
-          <div id="seatingChart" class="seating-chart" aria-label="Interactive seating chart">
-            <svg id="conversationLines" aria-hidden="true"></svg>
-            <div id="studentLayer"></div>
-            <div id="emptyState" class="empty-state">
-              <h3>Add student names to begin</h3>
-              <p>Use the roster panel to build a discussion map for your class.</p>
+          <article class="timeline-item">
+            <span class="number">2</span>
+            <div>
+              <p class="org">University Prep</p>
+              <h3>Academic Tech Coordinator</h3>
+              <p>
+                At University Prep, I spearheaded the development and
+                implementation of VR/AR experiences and integrated AI and ML
+                tools to enhance instructional methods. I managed a makerspace
+                program, designed immersive co-curricular activities, and led the
+                creation of a Unity-based video game development program, driving
+                innovation in the educational technology landscape.
+              </p>
             </div>
-          </div>
-        </section>
+          </article>
 
-        <aside class="insight-panel">
-          <section class="panel-section">
-            <h2>Participation</h2>
-            <div id="barChart" class="bar-chart" aria-label="Student participation totals"></div>
-          </section>
-          <section class="panel-section">
-            <h2>Conversation Log</h2>
-            <ol id="conversationLog" class="conversation-log"></ol>
-          </section>
-        </aside>
+          <article class="timeline-item">
+            <span class="number">3</span>
+            <div>
+              <p class="org">Houston ISD</p>
+              <h3>EdTech Specialist</h3>
+              <p>
+                As the EdTech Specialist at Houston ISD, I developed immersive
+                experiences for Adobe Certifications and evaluated the
+                effectiveness of educational technologies using advanced
+                frameworks like the TIM Matrix and ISTE standards. My role
+                involved designing district-wide technology integration projects
+                and supporting teachers in implementing innovative,
+                technology-rich lessons.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="number">4</span>
+            <div>
+              <p class="org">Zoe Immersive</p>
+              <h3>VR Content Creator and Presenter</h3>
+              <p>
+                Designed and developed two educational templates for Zoe
+                Immersive: an escape room and a school fair template, showcasing
+                Zoe Immersive capabilities and serving as templates for educators
+                and students to start their designs. Also led a workshop in VR
+                development at ISTE with Zoe Immersive.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="number">5</span>
+            <div>
+              <p class="org">The Village School</p>
+              <h3>EdTech Instructional Designer</h3>
+              <p>
+                During my time at The Village School, I designed and delivered
+                professional development on integrating EdTech tools and created
+                immersive hybrid and in-person learning experiences. I also
+                developed authentic projects and assessments that leveraged
+                technology to enhance student engagement and learning outcomes.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="number">6</span>
+            <div>
+              <p class="org">American Institute of Monterrey</p>
+              <h3>Instructional Designer</h3>
+              <p>
+                At the American Institute of Monterrey, I focused on integrating
+                educational technology into the curriculum, designing
+                professional development courses on platforms like Chameleon
+                Creator and Articulate 360. I played a key role in infusing
+                technology into school functions, ensuring that our approach to
+                teaching was supported by innovative, research-based strategies.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="number">7</span>
+            <div>
+              <p class="org">Library of Congress</p>
+              <h3>Game Developer</h3>
+              <p>
+                Created an educational video game developed in Unity 3D for the
+                Library of Congress Challenge. Set in the dynamic and visually
+                engaging world of Polygon City, players embark on an open-world
+                adventure to collect coins, each unlocking insightful information
+                about the Bill of Rights.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <span class="number">8</span>
+            <div>
+              <p class="org">Instituto Anglo Británico</p>
+              <h3>Technology Integration Leader</h3>
+              <p>
+                At Instituto Anglo Británico, I led the integration of
+                educational technology across the IB Middle Years Programme,
+                serving as both MYP Coordinator and EdTech coach. I collaborated
+                with faculty to design interdisciplinary, tech-enhanced units and
+                implemented a school-wide iPad integration strategy. I developed
+                and facilitated professional development sessions on
+                instructional technology tools and created project-based learning
+                experiences that fostered creativity, collaboration, and digital
+                fluency. My leadership helped shape a future-focused,
+                student-centered learning environment aligned with IB principles
+                and global innovation goals.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
-    <script src="game.js?v=20260428-1"></script>
+    <footer>
+      <p>
+        <strong>Jonathan Delgado</strong>
+        <span>Let’s connect:</span>
+        <a href="mailto:jonathandelgado.metaverse@outlook.com">jonathandelgado.metaverse@outlook.com</a>
+      </p>
+      <a href="#home">Back to top <span aria-hidden="true">-></span></a>
+    </footer>
+
+    <dialog class="video-modal" aria-labelledby="video-title">
+      <div class="video-modal-panel">
+        <div class="video-modal-header">
+          <h2 id="video-title">Project Video</h2>
+          <button class="modal-close" type="button" data-video-close aria-label="Close video">x</button>
+        </div>
+        <div class="video-frame">
+          <iframe
+            title="Bridging the STEM Gap for Girls Through Innovation"
+            src=""
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </dialog>
+
+    <script>
+      const modal = document.querySelector(".video-modal");
+      const iframe = modal.querySelector("iframe");
+      const videoTitle = document.querySelector("#video-title");
+      const openButtons = document.querySelectorAll("[data-video-open]");
+      const closeButton = document.querySelector("[data-video-close]");
+
+      function closeVideo() {
+        modal.close();
+        iframe.src = "";
+      }
+
+      openButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          videoTitle.textContent = button.dataset.videoTitle;
+          iframe.title = button.dataset.videoTitle;
+          iframe.src = button.dataset.videoSrc;
+          modal.showModal();
+        });
+      });
+
+      closeButton.addEventListener("click", closeVideo);
+
+      modal.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          closeVideo();
+        }
+      });
+
+      modal.addEventListener("cancel", () => {
+        iframe.src = "";
+      });
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
   </body>
 </html>
